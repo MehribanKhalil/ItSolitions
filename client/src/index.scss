@@ -1,0 +1,36 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200;300;400;500;600;700;800;900&family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
+
+:root{
+  --main-color:#316EC2;
+  --dark-color:#003072;
+}
+
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+
+h1{
+  font-size: clamp(1.875rem, 1.1591rem + 3.8182vw, 4.5rem);
+  font-family: 'Rubik', sans-serif;
+}
+h2{
+  font-size: clamp(1.875rem, 1.7045rem + 0.9091vw, 2.5rem);
+  font-family: 'Rubik', sans-serif;
+
+}
+h3,h4,h5,h6{
+  font-family: 'Rubik', sans-serif;
+}
+
+.section{
+  @apply px-5  md:px-24 lg:px-32 py-16
+}
+
+.page{
+  @apply min-h-[100vh]
+}
+

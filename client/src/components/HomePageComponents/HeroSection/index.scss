@@ -1,0 +1,29 @@
+.hero-section{
+    background: url(https://preview.colorlib.com/theme/itlock/assets/img/hero/h1_hero1.jpg.webp);
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+
+    .hero-title{
+        position: relative;
+        padding: 10px 0;
+        &::after{
+            content: '';
+            width: 150px;
+            height: 4px;
+            background-color: white;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+
+    @media screen and (max-width:992px) {
+        .hero-title{
+            position: relative;
+            &::after{
+                display: none;
+            }
+        }
+    }
+}

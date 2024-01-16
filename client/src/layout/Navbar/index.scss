@@ -1,0 +1,8 @@
+.main-nav{
+    .nav-item{
+        transition:  all .3s ease;
+        &:hover{
+            color: var(--main-color);
+        }
+    }
+}
